@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nhà cung cấp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <!-- header-top -->
+      <div id="header" class="header__scroll">
+        <div class="container d-flex">
+          <div class="logo">
+            <img src="./assets/img/felix-logo.jpg" alt="" />
+          </div>
+          <div class="header__search-scroll">
+            <div class="input-group position-relative">
+              <button
+                style="
+                  padding: 12px 16px;
+                  border-top-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+                  border: 2px solid var(--button-color);
+                "
+                class="btn btn-outline-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sản phẩm <i class="fa fa-angle-down"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sản phẩm</a></li>
+                <li><a class="dropdown-item" href="#">Nhà cung cấp</a></li>
+              </ul>
+              <input
+                style="padding: 12px; border: 2px solid var(--button-color)"
+                type="text"
+                class="form-control"
+                placeholder="Bạn đang tìm kiếm điều gì..."
+                aria-label="Amount (to the nearest dollar)"
+              />
+              <i class="fa fa-camera icon__input"></i>
+              <button
+                style="
+                  padding: 12px 24px;
+                  border-top-right-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                  border: 2px solid var(--button-color);
+                  background-color: var(--button-color);
+                  color: #fff;
+                "
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa fa-search"></i>
+                Tìm kiếm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__top-wrapper">
+        <div
+          class="header-top container d-flex align-items-center justify-content-between"
+        >
+          <div class="logo">
+            <img src="./assets/img/felix-logo.jpg" alt="" />
+          </div>
+          <div class="header__search">
+            <div class="input-group position-relative">
+              <button
+                style="
+                  padding: 12px 16px;
+                  border-top-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+                  border: 2px solid var(--button-color);
+                "
+                class="btn btn-outline-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sản phẩm <i class="fa fa-angle-down"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sản phẩm</a></li>
+                <li><a class="dropdown-item" href="#">Nhà cung cấp</a></li>
+              </ul>
+              <input
+                style="padding: 12px; border: 2px solid var(--button-color)"
+                type="text"
+                class="form-control"
+                placeholder="Bạn đang tìm kiếm điều gì..."
+                aria-label="Amount (to the nearest dollar)"
+              />
+              <i class="fa fa-camera icon__input"></i>
+              <button
+                style="
+                  padding: 12px 24px;
+                  border-top-right-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                  border: 2px solid var(--button-color);
+                  background-color: var(--button-color);
+                  color: #fff;
+                "
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa fa-search"></i>
+                Tìm kiếm
+              </button>
+            </div>
+          </div>
+          <div class="header__navigation d-flex align-items-center">
+            <div class="header__navigation-login d-flex align-items-center">
+              <div class="login-icon">
+                <img
+                  style="width: 28px"
+                  src="https://felix.store/img/xd-icon/ic_user@2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="login-label">
+                <span>Đăng nhập</span>
+                <br />
+                <span>Tham gia miễn phí</span>
+              </div>
+            </div>
+            <a href="" class="navigation__item">
+              <img src="https://felix.store/img/xd-icon/ic_noti.svg" alt="" />
+              <div>Thông báo</div>
+            </a>
+            <div class="navigation__item disabled">
+              <img
+                src="https://felix.store/img/xd-icon/ic_chat@2x.png"
+                alt=""
+              />
+              <div>Tin nhắn</div>
+            </div>
+            <a href="" class="navigation__item">
+              <img
+                src="https://felix.store/img/xd-icon/ic_shoppingcart@2x.png"
+                alt=""
+              />
+              <div>Đơn hàng</div>
+            </a>
+            <a href="" class="navigation__item">
+              <img
+                src="https://felix.store/img/xd-icon/ic_shoppingcart@2x.png"
+                alt=""
+              />
+              <div>Giỏ hàng</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- header-bottom -->
+      <div class="header__bottom-wrapper">
+        <div class="header__bottom container">
+          <div class="row">
+            <div class="header__category header__bottom-item col">
+              <i class="fa fa-list-ul"></i>
+              <span style="margin: 0 4px">Danh mục</span>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div class="header__carousel header__bottom-item col-7 text-center">
+              <span>Yêu cầu quyền lợi bảo hiểm</span>
+              <span>Đóng phí</span>
+              <span>Thẻ hội viên</span>
+              <span>Tư vấn tài chính</span>
+              <span>Mua bảo hiểm online</span>
+            </div>
+            <div class="header__language header__bottom-item col-2 px-3">
+              <span>Tiếng Việt - Đồng(đ)</span
+              ><i class="fa fa-angle-down ms-2"></i>
+            </div>
+            <div class="header__shipping header__bottom-item col-2 px-3">
+              <span>Vận chuyển đến: </span>
+              <img
+                class="mx-1"
+                width="16px"
+                src="https://felix.store/img/country_flag/vn.png"
+                alt=""
+              />
+              <i class="fa fa-angle-down ms-2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="wrapper-content">
+      <section id="products">
+        <div class="container px-0">
+          <div class="section-box">
+            <div class="box-seller-wrapper row">
+              <div class="box-seller col-7 d-flex align-content-center">
+                <a
+                  class="box-seller-img-wrapper"
+                  href="https://felix.store/vn/supplier/27-felix-academy"
+                >
+                  <img
+                    class="box-seller-img"
+                    src="https://felix.store/upload/user/avatar/cropped1648710744588.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="box-seller-shield-img"
+                    src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                    alt=""
+                  />
+                </a>
+
+                <div class="box-seller-info">
+                  <a
+                    class="seller-name"
+                    href="https://felix.store/vn/supplier/27-felix-academy"
+                  >
+                    <span>FELIX Academy</span>
+                  </a>
+                  <div class="seller-info-address">
+                    <i class="fa fa-map-marker-alt"></i> 84 Đường số 15, An Phú,
+                    Quận 2, Thành phố Hồ Chí Minh, Việt Nam
+                  </div>
+                  <div class="seller-interactive d-flex">
+                    <div class="interactive-box seller-follow">
+                      <i class="fa fa-plus"></i> Theo dõi
+                    </div>
+                    <div class="interactive-box seller-like">
+                      <i class="fa fa-heart"></i> Yêu thích
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-seller-statistic col-5">
+                <div class="row">
+                  <div class="col-6 box-statistic-item">
+                    <span class="statistic-title">Đánh giá</span>
+                    <span class="statistic-value">36</span>
+                  </div>
+                  <div class="col-6 box-statistic-item">
+                    <span class="statistic-title">Tỉ lệ phản hồi</span>
+                    <span class="statistic-value">0%</span>
+                  </div>
+                  <div class="col-6 box-statistic-item">
+                    <span class="statistic-title">Sản phẩm</span>
+                    <span class="statistic-value">10</span>
+                  </div>
+                  <div class="col-6 box-statistic-item">
+                    <span class="statistic-title">Tham gia</span>
+                    <span class="statistic-value">3 năm trước</span>
+                  </div>
+                  <div class="col-6 box-statistic-item">
+                    <span class="statistic-title">Người theo dõi</span>
+                    <span class="statistic-value">372</span>
+                  </div>
+                  <div class="col-6 box-statistic-item">
+                    <span class="statistic-title">Lượt yêu thích</span>
+                    <span class="statistic-value">375</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="supplier-voucher">
+            <h3 class="voucher-title">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-3 text">VOUCHER CỦA GIAN HÀNG</div>
+                <div class="col-8 horizontal-line"></div>
+                <div class="col-1 action">
+                  <div class="voucher-controller prev-action-voucher">
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                  <div class="voucher-controller next-action-voucher">
+                    <i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </h3>
+            <div class="voucher-list">
+              <div class="row px-4 py-3">
+                <div
+                  class="col voucher__item p-0"
+                  style="
+                    background-image: url('https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1654484820563_OOGOA3BJ61.webp');
+                    margin-right: 16px;
+                  "
+                >
+                  <div class="voucher__info">
+                    <div class="voucher__info-top d-flex">
+                      <div class="voucher__price">10,000,000đ</div>
+                      <div class="voucher__expire-date">
+                        Hạn sử dụng: 31/12/2022
+                      </div>
+                    </div>
+                    <div class="voucher__info-bottom d-flex">
+                      <div class="voucher__img">
+                        <div
+                          style="
+                            background-image: url('https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1652929903233_6CG39LQ3MZ.webp');
+                          "
+                          class="voucher__product"
+                        ></div>
+                      </div>
+                      <div class="voucher__desc">
+                        <p class="m-0">
+                          - Áp dụng khi mua sắm sản phẩm KHÓA HỌC BÁN HÀNG
+                          THƯƠNG MẠI ĐIỆN TỬ B2B thuộc nhà cung cấp FELIX
+                          Academy.
+                        </p>
+                        <p class="m-0">
+                          - Tổng giá trị mua sản phẩm tích luỹ tối thiểu
+                          30,000,000 đ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="voucher__price-wrapper">
+                    <div class="voucher__price-right">4,000,000đ</div>
+                    <div class="voucher__purchase">Hết hàng</div>
+                    <a
+                      class="voucher__detail"
+                      href="https://felix.store/vn/voucher-detail?id=7"
+                    >
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </a>
+                  </div>
+                </div>
+                <div
+                  style="
+                    background-image: url('https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1654483641123_A2YS922XAD.webp');
+                  "
+                  class="col voucher__item p-0"
+                >
+                  <div class="voucher__info">
+                    <div class="voucher__info-top">
+                      <div class="voucher__price">10,000,000đ</div>
+                      <div class="voucher__expire-date">
+                        Hạn sử dụng: 31/12/2022
+                      </div>
+                    </div>
+                    <div class="voucher__info-bottom d-flex">
+                      <div class="voucher__img">
+                        <div
+                          style="
+                            background-image: url('https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1652929903233_6CG39LQ3MZ.webp');
+                          "
+                          class="voucher__product"
+                        ></div>
+                      </div>
+                      <div class="voucher__desc">
+                        <p class="m-0">
+                          - Áp dụng khi mua sắm sản phẩm KHÓA HỌC BÁN HÀNG
+                          THƯƠNG MẠI ĐIỆN TỬ B2B thuộc nhà cung cấp FELIX
+                          Academy.
+                        </p>
+                        <p class="m-0">
+                          - Tổng giá trị mua sản phẩm tích luỹ tối thiểu
+                          30,000,000 đ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="voucher__price-wrapper">
+                    <div class="voucher__price-right">6,000,000đ</div>
+                    <div class="voucher__purchase">Hết hàng</div>
+                    <a
+                      class="voucher__detail"
+                      href="https://felix.store/vn/voucher-detail?id=7"
+                    >
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__title">
+            <h3>Sản phẩm</h3>
+          </div>
+          <div
+            class="tab__product d-flex justify-content-between align-items-center"
+          >
+            <p style="color: #878787">10 sản phẩm</p>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-vertical-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-vertical"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-vertical"
+                  aria-selected="true"
+                >
+                  <i class="fa fa-grip-vertical"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-list-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-list"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-list"
+                  aria-selected="false"
+                >
+                  <i class="fa fa-list-ul"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-vertical"
+              role="tabpanel"
+              aria-labelledby="pills-vertical-tab"
+            >
+              <div class="row">
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 px-2 mt-3">
+                  <div class="card product__item">
+                    <img
+                      class="card-img-top product__img"
+                      src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                      alt="Title"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title product__name-card">
+                        DỊCH VỤ KẾ TOÁN INHOUSE
+                      </h5>
+                      <p class="card-text product__price-card mb-0">
+                        8,000,000đ
+                      </p>
+                      <div
+                        class="product__extra-info d-flex align-items-center mt-2"
+                      >
+                        <div class="extra__item product-country-origin">
+                          <img
+                            class="me-1"
+                            width="16px"
+                            src="https://felix.store/img/country_flag/vn.png"
+                            alt=""
+                          />
+                          <span>VN</span>
+                        </div>
+                        <div class="extra__item product-maintenance">
+                          <span class="maintenance__number me-1">1</span>
+                          <span class="maintenance__unit">YRS</span>
+                        </div>
+                        <div class="extra-item product-by-factories">
+                          <img
+                            src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="action__product">
+                        <div class="add-to-cart">Thêm vào giỏ</div>
+                        <div class="detail__product">
+                          <i class="fa fa-search"></i> Xem chi tiết
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-list"
+              role="tabpanel"
+              aria-labelledby="pills-list-tab"
+            >
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-list d-flex align-items-center">
+                <div class="product__img-list">
+                  <img
+                    class="img__list"
+                    width="235px"
+                    src="https://s3.ap-southeast-1.amazonaws.com/felixstore.prod/dynamic_file/1653012552551_FNS9SBDU0Z.webp"
+                    alt="Title"
+                  />
+                </div>
+                <div class="product__content-list">
+                  <h5>DỊCH VỤ KẾ TOÁN INHOUSE</h5>
+                  <p class="my-0 product__price-list">8,000,000đ</p>
+                  <div
+                    class="product__extra-info d-flex align-items-center mt-2"
+                  >
+                    <div class="extra__item product-country-origin">
+                      <img
+                        class="me-1"
+                        width="16px"
+                        src="https://felix.store/img/country_flag/vn.png"
+                        alt=""
+                      />
+                      <span>VN</span>
+                    </div>
+                    <div class="extra__item product-maintenance">
+                      <span class="maintenance__number me-1">1</span>
+                      <span class="maintenance__unit">YRS</span>
+                    </div>
+                    <div class="extra-item product-by-factories">
+                      <img
+                        src="https://felix.store/modules/felixcommon/views/images/felix-factories-shield.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="action__product-list d-flex align-items-center">
+                    <div class="add-to-cart-list">Thêm vào giỏ</div>
+                    <div class="detail__product-list">
+                      <i class="fa fa-search"></i> Xem chi tiết
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="container">
+          <div
+            class="footer__contact-form d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="footer__contact-form-label">
+              Nhận được các sản phẩm mới nhất xu hướng và ngành công nghiệp tin
+              tức gửi đến
+            </div>
+            <div
+              class="footer__contact-form-input d-flex align-items-baseline mt-3"
+            >
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form__footer"
+                  name=""
+                  id=""
+                  placeholder="Email của bạn"
+                />
+              </div>
+              <button class="btn btn__form-footer">Đăng ký ngay</button>
+            </div>
+            <div class="footer__contact-form-helper">
+              Chúng tôi sẽ không bao giờ chia sẻ thông tin email của bạn cho bên
+              thứ ba.
+            </div>
+          </div>
+          <div class="footer__link">
+            <div class="row">
+              <div class="col">
+                <h5>Dịch vụ khách hàng</h5>
+                <div class="footer__link-item">Trung tâm trợ giúp</div>
+                <div class="footer__link-item">Báo cáo lạm dụng</div>
+                <div class="footer__link-item">Gửi khiếu nại</div>
+                <div class="footer__link-item">Chính sách và quy định</div>
+                <div class="footer__link-item">
+                  Được trả tiền khi bạn phản hồi
+                </div>
+              </div>
+              <div class="col">
+                <h5>Giới thiệu</h5>
+                <div class="footer__link-item">Trung tâm trợ giúp</div>
+                <div class="footer__link-item">Báo cáo lạm dụng</div>
+                <div class="footer__link-item">Gửi khiếu nại</div>
+                <div class="footer__link-item">Chính sách và quy định</div>
+                <div class="footer__link-item">
+                  Được trả tiền khi bạn phản hồi
+                </div>
+              </div>
+              <div class="col">
+                <h5>Tìm nguồn hàng trên Felix.store</h5>
+                <div class="footer__link-item">Trung tâm trợ giúp</div>
+                <div class="footer__link-item">Báo cáo lạm dụng</div>
+                <div class="footer__link-item">Gửi khiếu nại</div>
+                <div class="footer__link-item">Chính sách và quy định</div>
+                <div class="footer__link-item">
+                  Được trả tiền khi bạn phản hồi
+                </div>
+              </div>
+              <div class="col">
+                <h5>Bán trên Felix.store</h5>
+                <div class="footer__link-item">Trung tâm trợ giúp</div>
+                <div class="footer__link-item">Báo cáo lạm dụng</div>
+                <div class="footer__link-item">Gửi khiếu nại</div>
+                <div class="footer__link-item">Chính sách và quy định</div>
+                <div class="footer__link-item">
+                  Được trả tiền khi bạn phản hồi
+                </div>
+              </div>
+              <div class="col">
+                <h5>Dịch vụ thương mại</h5>
+                <div class="footer__link-item">Trung tâm trợ giúp</div>
+                <div class="footer__link-item">Báo cáo lạm dụng</div>
+                <div class="footer__link-item">Gửi khiếu nại</div>
+                <div class="footer__link-item">Chính sách và quy định</div>
+                <div class="footer__link-item">
+                  Được trả tiền khi bạn phản hồi
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-footer"></div>
+          <div class="footer__info text-center">
+            <div
+              class="additional__info-wrapper footer__info-socials-and-apps d-flex justify-content-between"
+            >
+              <div class="socials-and-apps-item app-store">
+                Tải app:
+
+                <img
+                  src="https://felix.store/img/footer/img_Appstore@2x.png"
+                  alt=""
+                />
+                <img
+                  src="https://felix.store/img/footer/img_googleplay@2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="socials-and-apps-item">
+                Ứng dụng Dành cho Đại lý Felix:
+                <img
+                  class="img__app"
+                  src="https://felix.store/img/footer/ic_felix_Agent@2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="socials-and-apps-item d-flex align-items-center">
+                Theo dõi chúng tôi:
+                <div class="app__list ms-2">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-youtube mx-1"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="additional__info-wrapper d-flex justify-content-center">
+              <div class="has__after">Felix Blog</div>
+              <div class="has__after">Felix Webinar</div>
+              <div class="has__after">Felix Academy</div>
+              <div class="">Felix Group</div>
+            </div>
+            <div class="additional__info-wrapper">
+              Chính sách đăng sản phẩm - Chính sách sở hữu trí tuệ và khiếu nại
+              vi phạm - Chính sách quyền riêng tư - Điều khoản sử dụng
+            </div>
+            <div class="additional__info-wrapper">
+              <img
+                width="80px"
+                src="https://felix.store/img/xd-icon/img_BoCongThuong@2x.png"
+                alt=""
+              />
+              <span class="copy__right">Copyright by Felix 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div onclick="backToTop()" id="backToTop">
+      <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // scroll header
+      document.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+        console.log("header: ", header);
+        if (window.scrollY > 0) {
+          header.style.display = "block";
+        } else {
+          header.style.display = "none";
+        }
+      });
+      // back to top
+      // Get the button
+      let btnBackToTop = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          btnBackToTop.style.display = "block";
+        } else {
+          btnBackToTop.style.display = "none";
+        }
+      }
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
